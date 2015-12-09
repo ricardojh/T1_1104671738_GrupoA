@@ -1,0 +1,148 @@
+\documentclass[9pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc} 
+
+\author{Ricardo Jumbo}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=842pt,top=70pt,right=85pt,bottom=70pt,left=85pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+
+	\begin{center}
+		\includegraphics[width=80pt,height=80pt]{unl.png}
+	\end{center}
+	
+	
+	\begin{center}
+		% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+		% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+		\begin{center}
+			{\LARGE \textbf{\\
+					UNIVERSIDAD NACIONAL DE LOJA}}
+		\end{center}
+		
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{
+				\large \'AREA DE LA ENERG\'IA LAS INDUSTRIAS Y LOS
+				RECURSOS NATURALES NO RENOVABLES}\\
+		}
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{\Large CARRERA DE INGENIER\'IA EN SISTEMAS}}
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{\Large Examen }}
+	\end{center}
+	
+	\textbf{\\
+		{\Large TEMA:}}
+	
+	\begin{center}
+		{\Large An\'alisis de Datos con Latex y R }
+	\end{center}
+	
+	\textbf{\\
+		{\Large Nombre: }}
+	
+	\begin{itemize}	
+		\item {\Large Ricardo Jumbo}\\
+		
+		{\Large AFINF7369  }
+	\end{itemize}
+	
+	\textbf{\\
+		{\Large Paralelo:}\\
+	}
+	
+	{\Large 6 ``A''}
+	
+	\textbf{\\
+		{\Large Docente:}\\
+	}
+	
+	{\Large Ing. Pablo Ordo\~nez}\\
+	
+	
+	\begin{center}
+		
+		{\Large * 09 de diciembre del 2015*}
+	\end{center}
+	
+\newpage
+
+\begin{center}
+\textbf{{\huge Respuestas}}
+
+\end{center}
+
+\begin{itemize}
+		\item ?`Es aplicable la ingenieria de sofware cuando se elaboran webapps?`Si es asi, ?`cómo puede que asimile las caracteristicas unicas de estas\\\\
+	efecitivamente se peude apliacar la ingenieria de software en la webapp ya que las caracteristicas unicas que esatas nos brindan nos permite hacer un uzo correcto de los estandares de analisis, contruccion entre otros que nos permite entregar un software ejecutable con alta calidad. 
+	
+	
+     \item Una breve descripcion del dataset Titanic\\\\
+     Este conjunto de datos proporciona informacion sobre el destino de los pasajeros en el primer viaje fatal del trasatlantico Titanic, que se resumen de acuerdo a la situacion economica (clase), el sexo, la edad y la supervivencia.
+     
+   
+     
+	\item Mostrar el dataset\\
+<<results = tex, echo = false>>=
+
+require(utils)
+Titanic
+@  
+	
+	\item ?`Cual es el numero total de casos en el dataset\\
+	
+<<results = tex, echo = true>>=
+
+require(utils)
+summary(Titanic)
+@  	
+\\
+ \textbf{El numero de casos es 2201}
+<<results = tex, echo = true>>=
+
+require(utils)
+sum(Titanic)
+@  	
+
+\end{itemize}
+
+
+\newpage
+\begin{center}
+	\includegraphics [width=80pt,height=50pt]{creative}\\
+\end{center}	
+
+\end{document}

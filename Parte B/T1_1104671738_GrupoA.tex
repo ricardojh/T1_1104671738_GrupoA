@@ -1,0 +1,184 @@
+\documentclass[9pt]{article}
+\usepackage{makeidx}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[dvipsnames,svgnames,table]{xcolor}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{ulem}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc} 
+
+\author{Ricardo Jumbo}
+\title{}
+\usepackage[paperwidth=595pt,paperheight=842pt,top=70pt,right=85pt,bottom=70pt,left=85pt]{geometry}
+
+\makeatletter
+	\newenvironment{indentation}[3]%
+	{\par\setlength{\parindent}{#3}
+	\setlength{\leftmargin}{#1}       \setlength{\rightmargin}{#2}%
+	\advance\linewidth -\leftmargin       \advance\linewidth -\rightmargin%
+	\advance\@totalleftmargin\leftmargin  \@setpar{{\@@par}}%
+	\parshape 1\@totalleftmargin \linewidth\ignorespaces}{\par}%
+\makeatother 
+
+% new LaTeX commands
+
+
+\usepackage{Sweave}
+\begin{document}
+\input{T1_1104671738_GrupoA-concordance}
+
+
+	\begin{center}
+		\includegraphics[width=80pt,height=80pt]{unl.png}
+	\end{center}
+	
+	
+	\begin{center}
+		% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+		% W2L: warn: inserting end tag WordToLatex.WLFontStyle
+		\begin{center}
+			{\LARGE \textbf{\\
+					UNIVERSIDAD NACIONAL DE LOJA}}
+		\end{center}
+		
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{
+				\large \'AREA DE LA ENERG\'IA LAS INDUSTRIAS Y LOS
+				RECURSOS NATURALES NO RENOVABLES}\\
+		}
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{\Large CARRERA DE INGENIER\'IA EN SISTEMAS}}
+	\end{center}
+	
+	\begin{center}
+		\textbf{\\
+			{\Large Examen }}
+	\end{center}
+	
+	\textbf{\\
+		{\Large TEMA:}}
+	
+	\begin{center}
+		{\Large An\'alisis de Datos con Latex y R }
+	\end{center}
+	
+	\textbf{\\
+		{\Large Nombre: }}
+	
+	\begin{itemize}	
+		\item {\Large Ricardo Jumbo}\\
+		
+		{\Large AFINF7369  }
+	\end{itemize}
+	
+	\textbf{\\
+		{\Large Paralelo:}\\
+	}
+	
+	{\Large 6 ``A''}
+	
+	\textbf{\\
+		{\Large Docente:}\\
+	}
+	
+	{\Large Ing. Pablo Ordo\~nez}\\
+	
+	
+	\begin{center}
+		
+		{\Large * 09 de diciembre del 2015*}
+	\end{center}
+	
+\newpage
+
+\begin{center}
+\textbf{{\huge Respuestas}}
+
+\end{center}
+
+\begin{itemize}
+		\item ?`Es aplicable la ingenieria de sofware cuando se elaboran webapps?`Si es asi, ?`c<f3>mo puede que asimile las caracteristicas unicas de estas\\\\
+	efecitivamente se peude apliacar la ingenieria de software en la webapp ya que las caracteristicas unicas que esatas nos brindan nos permite hacer un uzo correcto de los estandares de analisis, contruccion entre otros que nos permite entregar un software ejecutable con alta calidad. 
+	
+	
+     \item Una breve descripcion del dataset Titanic\\\\
+     Este conjunto de datos proporciona informacion sobre el destino de los pasajeros en el primer viaje fatal del trasatlantico Titanic, que se resumen de acuerdo a la situacion economica (clase), el sexo, la edad y la supervivencia.
+     
+   
+     
+	\item Mostrar el dataset\\
+, , Age = Child, Survived = No
+
+      Sex
+Class  Male Female
+  1st     0      0
+  2nd     0      0
+  3rd    35     17
+  Crew    0      0
+
+, , Age = Adult, Survived = No
+
+      Sex
+Class  Male Female
+  1st   118      4
+  2nd   154     13
+  3rd   387     89
+  Crew  670      3
+
+, , Age = Child, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st     5      1
+  2nd    11     13
+  3rd    13     14
+  Crew    0      0
+
+, , Age = Adult, Survived = Yes
+
+      Sex
+Class  Male Female
+  1st    57    140
+  2nd    14     80
+  3rd    75     76
+  Crew  192     20	
+	\item ?`Cual es el numero total de casos en el dataset\\
+	
+\begin{Schunk}
+\begin{Sinput}
+> require(utils)
+> summary(Titanic)
+\end{Sinput}
+Number of cases in table: 2201 
+Number of factors: 4 
+Test for independence of all factors:
+	Chisq = 1637.4, df = 25, p-value = 0
+	Chi-squared approximation may be incorrect\end{Schunk}
+\\
+ \textbf{El numero de casos es 2201}
+\begin{Schunk}
+\begin{Sinput}
+> require(utils)
+> sum(Titanic)
+\end{Sinput}
+[1] 2201\end{Schunk}
+
+\end{itemize}
+
+
+\newpage
+\begin{center}
+	\includegraphics [width=80pt,height=50pt]{creative}\\
+\end{center}	
+
+\end{document}
